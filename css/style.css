@@ -156,6 +156,7 @@ table {
 body {
 	font-size: 16px;
 	font-family: Roboto;
+	height: 100vh;
 }
 /* ============================= */
 /* Header ====================== */
@@ -169,6 +170,11 @@ body {
 .page-header {
 	display: flex;
 	align-items: center;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	height: 2.5rem;
+	z-index: 99999;
 }
 
 .wrapper {
@@ -437,6 +443,7 @@ article h3 {
 .page-footer {
 	margin: 100px 0 0;
 }
+
 .page-footer > .wrapper > * {
 	width: 33.33%;
 }
@@ -475,12 +482,14 @@ article h3 {
 .copy {
 	margin-top: 1rem;
 }
+
 /* ============================= */
 /* Media Queries =============== */
 /* ============================= */
 
 @media screen and (max-width: 75em) {
-	.page-header {
+	.page-header,
+	.page-footer {
 		position: relative;
 	}
 
@@ -613,6 +622,11 @@ article h3 {
 
 	.page-footer > .wrapper > .socials {
 		width: 30%;
+	}
+
+	.footer-nav,
+	.copy {
+		margin-top: 0rem;
 	}
 }
 
