@@ -471,17 +471,10 @@ article h3 {
 	padding: 0 18px;
 }
 
-.bottom div {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	line-height: 5rem;
+.footer-nav,
+.copy {
+	margin-top: 1rem;
 }
-
-.socials {
-	line-height: 1rem !important;
-}
-
 /* ============================= */
 /* Media Queries =============== */
 /* ============================= */
